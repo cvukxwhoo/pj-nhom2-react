@@ -6,8 +6,7 @@ import {
   faUser,
   faCartShopping,
   faMagnifyingGlass,
-  faBagShopping,
-} from "@fortawesome/free-regular-svg-icons";
+} from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(styles);
 function Header() {
@@ -55,7 +54,6 @@ function Header() {
             <FontAwesomeIcon icon={faUser} />
             <FontAwesomeIcon icon={faCartShopping} />
             <FontAwesomeIcon icon={faMagnifyingGlass} />
-            <FontAwesomeIcon icon={faBagShopping} />
           </div>
         </div>
       </div>
