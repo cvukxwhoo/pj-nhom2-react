@@ -9,15 +9,14 @@ root {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
-  font-size: 16px;
+  font-size: 62.5%;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 2 rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
 }
