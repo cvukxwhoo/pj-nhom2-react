@@ -50,10 +50,22 @@ function Header() {
             </li>
           </ul>
           {/* Components */}
-          <div className="box-cta">
-            <FontAwesomeIcon icon={faUser} />
-            <FontAwesomeIcon icon={faCartShopping} />
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <div className={cx("box-cta")}>
+            <Link className={cx("cta")} to="/user">
+              <FontAwesomeIcon style={{ color: "#fff" }} icon={faUser} />
+            </Link>
+            <Link className={cx("cta")} to="/shopping">
+              <FontAwesomeIcon
+                style={{ color: "#fff" }}
+                icon={faCartShopping}
+              />
+            </Link>
+            <Link to="/search" className={cx("cta")}>
+              <FontAwesomeIcon
+                style={{ color: "#fff" }}
+                icon={faMagnifyingGlass}
+              />
+            </Link>
           </div>
         </div>
       </div>
