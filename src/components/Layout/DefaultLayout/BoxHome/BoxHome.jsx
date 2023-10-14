@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 import styles from "./BoxHome.module.scss";
 import HomeTitle from "./Divs/HomeTitle/HomeTitle";
 import HomeForm from "./Divs/HomeForm/HomeForm";
+import Feature from "./Divs/Feature/Feature";
 
 const cx = classNames.bind(styles);
 const BoxHome = () => {
@@ -14,7 +15,9 @@ const BoxHome = () => {
         <HomeTitle />
         {/* div className:home-form*/}
         <HomeForm />
+        {/* div className: home-feature */}
       </div>
+      <Feature />
     </section>
   );
 };

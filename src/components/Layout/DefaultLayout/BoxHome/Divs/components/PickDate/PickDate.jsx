@@ -1,8 +1,7 @@
 import React from "react";
 import { DatePicker, Space } from "antd";
-
 import classNames from "classnames/bind";
-import styles from "./PickDate.scss";
+import styles from "./PickDate.module.scss";
 import { TimeClock } from "@mui/x-date-pickers";
 
 const cx = classNames.bind(styles);
