@@ -1,6 +1,7 @@
 import classNames from "classnames/bind";
 import styles from "./BoxHome.module.scss";
 import HomeTitle from "./Divs/HomeTitle/HomeTitle";
+import HomeForm from "./Divs/HomeForm/HomeForm";
 
 const cx = classNames.bind(styles);
 const BoxHome = () => {
@@ -12,7 +13,7 @@ const BoxHome = () => {
         {/* div className:home-title */}
         <HomeTitle />
         {/* div className:home-form*/}
-        <div className={cx("home-form")}></div>
+        <HomeForm />
       </div>
     </section>
   );
