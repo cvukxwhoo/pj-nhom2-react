@@ -1,7 +1,12 @@
 import React from "react";
+import BoxHome from "../../components/Layout/DefaultLayout/BoxHome/BoxHome";
 
 const Home = () => {
-  return <div>Home page</div>;
+  return (
+    <>
+      <BoxHome />
+    </>
+  );
 };
 
 export default Home;
