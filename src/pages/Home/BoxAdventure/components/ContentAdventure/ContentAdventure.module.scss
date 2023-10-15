@@ -1,0 +1,100 @@
+.content-adventure {
+  width: 100%;
+  margin: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Photo
+.photo-adventure {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 160px 160px 160px;
+  grid-template-rows: 160px 160px 160px;
+  gap: 15px;
+  justify-content: center;
+}
+
+.photo-card {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-card:hover .info-card {
+  background-color: rgba(71, 71, 71, 0.8);
+  transition: all 0.3s linear;
+}
+
+.info-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(28, 28, 28, 0.2);
+  bottom: 0;
+  left: 0%;
+  transition: all 0.3s linear;
+}
+
+.info-card:hover .person-walking-icon {
+  display: block;
+  transform: scale(4);
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.info-card .person-walking-icon {
+  z-index: 3;
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.info-card p {
+  position: absolute;
+  bottom: 10%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  left: 30%;
+}
+
+// Info
+.text-adventure {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.text-adventure h3 {
+  color: #1f2933;
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 300;
+  margin: 0px 0px 35px;
+}
+
+.text-adventure p {
+  color: #1f2933;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 300;
+  margin: 0px 0px 35px;
+}
