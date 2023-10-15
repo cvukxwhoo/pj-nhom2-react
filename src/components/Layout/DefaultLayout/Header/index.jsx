@@ -7,69 +7,74 @@ import {
   faCartShopping,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
+import Source from "./Source";
 
 const cx = classNames.bind(styles);
 function Header() {
   return (
-    <header className={cx("wrapper")}>
-      <div className={cx("inner")}>
-        {/* Logo */}
-        <div className={cx("box-logo")}>
-          <Link to="/">
-            <img
-              src="https://entrada.webtravel.vn/image/logo-entrada.png"
-              alt="entrada"
-            />
-          </Link>
-        </div>
-        {/* Links */}
-        <div className={cx("navs")}>
-          <ul style={{ margin: "0" }}>
-            <li>
-              <Link className={cx("nav-child")} to="/">
-                Home
+    <>
+      <nav className={cx("box-navbar")}>
+        <header className={cx("wrapper")}>
+          <div className={cx("inner")}>
+            {/* Logo */}
+            <div className={cx("box-logo")}>
+              <Link to="/">
+                <img
+                  src="https://entrada.webtravel.vn/image/logo-entrada.png"
+                  alt="entrada"
+                />
               </Link>
-              <Link className={cx("nav-child")} to="/destination">
-                Destination
-              </Link>
-              <Link className={cx("nav-child")} to="/listings">
-                Listings
-              </Link>
-              <Link className={cx("nav-child")} to="/activities">
-                Activities
-              </Link>
-              <Link className={cx("nav-child")} to="/shop">
-                Shop
-              </Link>
-              <Link className={cx("nav-child")} to="/blog">
-                Blog
-              </Link>
-              <Link className={cx("nav-child")} to="/contact">
-                Contact
-              </Link>
-            </li>
-          </ul>
-          {/* Components */}
-          <div className={cx("box-cta")}>
-            <Link className={cx("cta")} to="/user">
-              <FontAwesomeIcon style={{ color: "#fff" }} icon={faUser} />
-            </Link>
-            <Link className={cx("cta")} to="/shopping">
-              <FontAwesomeIcon
-                style={{ color: "#fff" }}
-                icon={faCartShopping}
-              />
-            </Link>
-            <Link to="/search" className={cx("cta")}>
-              <FontAwesomeIcon
-                style={{ color: "#fff" }}
-                icon={faMagnifyingGlass}
-              />
-            </Link>
+            </div>
+            {/* Links */}
+            <div className={cx("navs")}>
+              <ul style={{ margin: "0" }}>
+                <li>
+                  <Link className={cx("nav-child")} to="/">
+                    Home
+                  </Link>
+                  <Link className={cx("nav-child")} to="/destination">
+                    Destination
+                  </Link>
+                  <Link className={cx("nav-child")} to="/listings">
+                    Listings
+                  </Link>
+                  <Link className={cx("nav-child")} to="/activities">
+                    Activities
+                  </Link>
+                  <Link className={cx("nav-child")} to="/shop">
+                    Shop
+                  </Link>
+                  <Link className={cx("nav-child")} to="/blog">
+                    Blog
+                  </Link>
+                  <Link className={cx("nav-child")} to="/contact">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+              {/* Components */}
+              <div className={cx("box-cta")}>
+                <Link className={cx("cta")} to="/user">
+                  <FontAwesomeIcon style={{ color: "#fff" }} icon={faUser} />
+                </Link>
+                <Link className={cx("cta")} to="/shopping">
+                  <FontAwesomeIcon
+                    style={{ color: "#fff" }}
+                    icon={faCartShopping}
+                  />
+                </Link>
+                <Link to="/search" className={cx("cta")}>
+                  <FontAwesomeIcon
+                    style={{ color: "#fff" }}
+                    icon={faMagnifyingGlass}
+                  />
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </header>
+        </header>
+      </nav>
+    </>
   );
 }
 

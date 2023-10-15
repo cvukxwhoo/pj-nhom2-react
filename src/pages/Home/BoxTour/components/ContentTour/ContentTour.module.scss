@@ -1,0 +1,114 @@
+.content-tour {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card-tour {
+  width: 100%;
+  display: inline-block;
+}
+
+.card-tour:hover .photo-tour .learn-tour {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+// photo-tour
+.photo-tour {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.photo-tour img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s linear;
+}
+
+.card-tour:hover .time-tour {
+  color: #fff;
+}
+
+.photo-tour .time-tour {
+  z-index: 1;
+  position: absolute;
+  top: 5%;
+  right: 0;
+  color: #ada075;
+  background-color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 3px 8px;
+  transition: all 0.3s linear;
+}
+
+// learn-tour
+.learn-tour {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0.17, 0.17, 0.17, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.learn-tour .star-tour {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 15px;
+}
+
+.learn-tour .book-tour {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.learn-tour .price-tour {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s linear;
+}
+
+// infro-tour
+.card-tour .infor-tour {
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+}
+
+.infor-tour h3 {
+  color: #54574e;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0px 0px 15px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.infor-tour p {
+  color: #1f2933;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0px 0px 10px;
+}

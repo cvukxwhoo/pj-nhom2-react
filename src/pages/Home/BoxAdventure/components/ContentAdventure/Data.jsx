@@ -16,8 +16,8 @@ const Data = [
     content: "Sapporo",
   },
   {
-    src: "https://cf.bstatic.com/xdata/images/city/square250/971332.webp?k=557e806783551455aa9f68b4180bef64ba3dac7cd2c0c4f268c1bfdbdbc01f83&o=",
-    content: "Yokohama",
+    src: "https://cf.bstatic.com/xdata/images/city/square250/643676.webp?k=fddc685daf602f9a93637606893affa6576725219981337bea84ddca47095f7b&o=",
+    content: "Hakone",
   },
   {
     src: "https://cf.bstatic.com/xdata/images/city/square250/691432.webp?k=d093dfd43a1ad57057ea91b0e9ab540255058bcc3d08eaeaba54928944398818&o=",

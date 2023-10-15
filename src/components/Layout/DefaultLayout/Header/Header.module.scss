@@ -1,3 +1,18 @@
+.box-navbar {
+  z-index: 999;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: auto; */
+  height: 85px;
+  background-color: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+
 .wrapper {
   z-index: 999;
   position: relative;

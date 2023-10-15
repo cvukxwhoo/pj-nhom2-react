@@ -1,0 +1,19 @@
+.book-tour {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.book:hover {
+  color: #ada075;
+  transition: all 0.3s linear;
+}
+
+.book {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  padding: 0 5px;
+}

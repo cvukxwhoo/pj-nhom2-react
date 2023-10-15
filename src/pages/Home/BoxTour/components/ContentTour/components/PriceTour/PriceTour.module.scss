@@ -1,0 +1,39 @@
+.price-tour {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s linear;
+}
+
+.price h3 {
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+h3 span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #ada075;
+  transition: all 0.3s linear;
+}
+
+.explore {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
