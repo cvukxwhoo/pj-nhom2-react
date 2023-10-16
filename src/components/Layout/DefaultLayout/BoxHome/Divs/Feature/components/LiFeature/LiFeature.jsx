@@ -10,7 +10,7 @@ import {
   faPersonSwimming,
   faHippo,
 } from "@fortawesome/free-solid-svg-icons";
-import styles from "./LiFeature.scss";
+import styles from "./LiFeature.module.scss";
 import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles);

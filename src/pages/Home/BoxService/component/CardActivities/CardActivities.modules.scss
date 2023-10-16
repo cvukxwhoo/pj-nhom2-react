@@ -1,0 +1,50 @@
+.card-activitie {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.card-activitie .image {
+  font-size: 50px;
+  transition: all 0.3s linear;
+}
+
+.card-activitie:hover .image {
+  transform: translateY(-20px);
+  transition: all 0.3s linear;
+}
+
+.card-activitie:nth-child(1) {
+  background-color: #6b6957;
+}
+
+.card-activitie:nth-child(2) {
+  background-color: #565335;
+}
+
+.card-activitie:nth-child(3) {
+  background-color: #474d4b;
+}
+
+.card-activitie:nth-child(4) {
+  background-color: #b0a377;
+}
+
+span {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+h1 {
+  font-size: 18px;
+  letter-spacing: 4px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}

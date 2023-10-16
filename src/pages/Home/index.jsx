@@ -3,6 +3,7 @@ import React from "react";
 import BoxHome from "../../components/Layout/DefaultLayout/BoxHome/BoxHome";
 import BoxAdventure from "./BoxAdventure/BoxAdventure";
 import BoxTour from "./BoxTour/BoxTour";
+import BoxService from "./BoxService/BoxService";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <BoxHome />
       <BoxAdventure />
       <BoxTour />
+      <BoxService />
     </>
   );
 };
