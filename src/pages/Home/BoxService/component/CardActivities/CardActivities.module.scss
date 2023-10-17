@@ -1,4 +1,11 @@
-.card-activitie {
+.wrap-activities {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-activiti {
   width: 100%;
   display: flex;
   align-items: center;
@@ -9,29 +16,29 @@
   color: #fff;
 }
 
-.card-activitie .image {
+.card-activiti .image {
   font-size: 50px;
   transition: all 0.3s linear;
 }
 
-.card-activitie:hover .image {
+.card-activiti:hover .image {
   transform: translateY(-20px);
   transition: all 0.3s linear;
 }
 
-.card-activitie:nth-child(1) {
+.card-activiti:nth-child(1) {
   background-color: #6b6957;
 }
 
-.card-activitie:nth-child(2) {
+.card-activiti:nth-child(2) {
   background-color: #565335;
 }
 
-.card-activitie:nth-child(3) {
+.card-activiti:nth-child(3) {
   background-color: #474d4b;
 }
 
-.card-activitie:nth-child(4) {
+.card-activiti:nth-child(4) {
   background-color: #b0a377;
 }
 

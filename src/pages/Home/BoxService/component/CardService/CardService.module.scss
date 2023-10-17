@@ -1,0 +1,78 @@
+.wrap-service {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+.card-service {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-service {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-service img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.infor-service {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.infor-service h3 {
+  width: 100%;
+  color: #474d4b;
+  font-size: 30px;
+  margin: 0px 0px 35px 0px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.infor-service p {
+  width: 80%;
+  color: #1f2933;
+  font-size: 18px;
+  margin: 0px 0px 35px 0px;
+  line-height: 36px;
+}
+.infor-service button {
+  width: 30%;
+  border: 1px solid #5c5e62;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #5c5e62;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 38px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s linear;
+}
+
+.infor-service button:hover {
+  background-color: #565335;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.wrap-service .cs2 {
+  flex-direction: row-reverse;
+}
