@@ -25,12 +25,6 @@ const CardService = () => {
 
       {/* card service cs2 */}
       <div className={cx("card-service")}>
-        <div className={cx("img-service")}>
-          <img
-            src="https://ik.imagekit.io/tvlk/blog/2023/03/du-lich-yamanashi-15.jpg?tr=dpr-2,w-675"
-            alt=""
-          />
-        </div>
         <div className={cx("infor-service")}>
           <h3>Discovery of Yamanashi</h3>
           <p>
@@ -41,6 +35,12 @@ const CardService = () => {
             wonderful hot springs, and some of Japan's best wineries.
           </p>
           <button>Explore</button>
+        </div>
+        <div className={cx("img-service")}>
+          <img
+            src="https://ik.imagekit.io/tvlk/blog/2023/03/du-lich-yamanashi-15.jpg?tr=dpr-2,w-675"
+            alt=""
+          />
         </div>
       </div>
     </div>

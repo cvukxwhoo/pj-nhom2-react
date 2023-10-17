@@ -1,0 +1,30 @@
+footer {
+  object-fit: cover;
+  background: url("https://entrada.webtravel.vn/image/bg-footer.png");
+}
+
+.box-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.wrap-footer {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: #252525;
+}
