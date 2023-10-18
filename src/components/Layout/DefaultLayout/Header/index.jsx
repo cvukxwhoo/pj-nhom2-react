@@ -7,7 +7,6 @@ import {
   faCartShopping,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
-import Source from "./Source";
 
 const cx = classNames.bind(styles);
 function Header() {
@@ -25,21 +24,31 @@ function Header() {
                 />
               </Link>
             </div>
-            {/* Links */}
             <div className={cx("navs")}>
               <ul style={{ margin: "0" }}>
                 <li>
                   <Link className={cx("nav-child")} to="/">
                     Home
                   </Link>
+
                   <Link className={cx("nav-child")} to="/destination">
-                    Destination
-                  </Link>
-                  <Link className={cx("nav-child")} to="/listings">
-                    Listings
-                  </Link>
-                  <Link className={cx("nav-child")} to="/activities">
-                    Activities
+                    <>Destination</>
+                    <ul className={cx("dropdown")}>
+                      <div className={cx("dropdown-left")}>
+                        <li>
+                          <a href="">Tokyo</a>
+                        </li>
+                        <li>
+                          <a href="">Kyoto</a>
+                        </li>
+                        <li>
+                          <a href="">Osaka</a>
+                        </li>
+                        <li>
+                          <a href="">Kobe</a>
+                        </li>
+                      </div>
+                    </ul>
                   </Link>
                   <Link className={cx("nav-child")} to="/shop">
                     Shop

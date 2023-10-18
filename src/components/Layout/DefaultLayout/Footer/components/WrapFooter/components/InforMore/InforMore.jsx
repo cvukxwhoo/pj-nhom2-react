@@ -18,7 +18,7 @@ const InforMore = () => {
         <h1>About</h1>
         <ul>
           <li>
-            <a href="">The Company</a>
+            <a href="">Company</a>
           </li>
           <li>
             <a href="">Our Values</a>
