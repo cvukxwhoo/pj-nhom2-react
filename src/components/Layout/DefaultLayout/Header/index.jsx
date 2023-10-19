@@ -7,6 +7,8 @@ import {
   faCartShopping,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
+import Logo from "./components/Logo/Logo";
+import Menu from "./components/Menu/Menu";
 
 const cx = classNames.bind(styles);
 function Header() {
@@ -16,51 +18,12 @@ function Header() {
         <header className={cx("wrapper")}>
           <div className={cx("inner")}>
             {/* Logo */}
-            <div className={cx("box-logo")}>
-              <Link to="/">
-                <img
-                  src="https://entrada.webtravel.vn/image/logo-entrada.png"
-                  alt="entrada"
-                />
-              </Link>
-            </div>
-            <div className={cx("navs")}>
-              <ul style={{ margin: "0" }}>
-                <li>
-                  <Link className={cx("nav-child")} to="/">
-                    Home
-                  </Link>
+            <Logo className={cx("menu")} />
+            {/* Menu   */}
 
-                  <Link className={cx("nav-child")} to="/destination">
-                    <>Destination</>
-                    <ul className={cx("dropdown")}>
-                      <div className={cx("dropdown-left")}>
-                        <li>
-                          <a href="">Tokyo</a>
-                        </li>
-                        <li>
-                          <a href="">Kyoto</a>
-                        </li>
-                        <li>
-                          <a href="">Osaka</a>
-                        </li>
-                        <li>
-                          <a href="">Kobe</a>
-                        </li>
-                      </div>
-                    </ul>
-                  </Link>
-                  <Link className={cx("nav-child")} to="/shop">
-                    Shop
-                  </Link>
-                  <Link className={cx("nav-child")} to="/blog">
-                    Blog
-                  </Link>
-                  <Link className={cx("nav-child")} to="/contact">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
+            <div className={cx("wrap-menu")}>
+              <Menu className={cx("menu")} />
+
               {/* Components */}
               <div className={cx("box-cta")}>
                 <Link className={cx("cta")} to="/user">

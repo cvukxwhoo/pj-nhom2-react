@@ -1,58 +1,41 @@
-import React, { useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./SelectPlace.module.scss";
 
 const cx = classNames.bind(styles);
 const SelectPlace = () => {
-  const [value, setValue] = useState("");
   const options = [
     {
-      id: 1,
       label: "All Destionation",
       value: 1,
     },
     {
-      id: 2,
       label: "Tokyo",
       value: 2,
     },
     {
-      id: 3,
       label: "Osaka",
       value: 3,
     },
     {
-      id: 4,
       label: "Kyoto",
       value: 4,
     },
     {
-      id: 5,
       label: "Nagoya",
       value: 5,
     },
   ];
 
-  function handleSelect(event) {
-    setValue(event.target.value);
-  }
-  console.log(setValue);
-
   return (
-    <div>
-      <select key={options.id} className={cx("select")}>
-        {options.map((option) => (
-          <option
-            className={cx("op")}
-            value={option.value}
-            onChange={handleSelect}
-          >
+    <select className={cx("select")}>
+      {options.map((option, index) => {
+        return (
+          <option className={cx("op")} key={index} value={option.value}>
             {option.label}
           </option>
-        ))}
-      </select>
-      <p>{value}</p>
-    </div>
+        );
+      })}
+    </select>
     // <div>
     //   <select className={cx("select")}>
     //     <option className={cx("op")} value="1">
