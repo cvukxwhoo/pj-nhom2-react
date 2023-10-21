@@ -1,9 +1,18 @@
-.wrapper .inner .box-logo {
-  cursor: pointer;
+.box-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+  height: auto;
   padding: 20px 40px;
   border-right: 1px solid #2d2d2d;
 }
 
-.box-logo img {
+.box-logo .box-logo-a {
+  text-decoration: none;
+}
+
+.box-logo-a img {
   width: 160px;
+  height: auto;
 }

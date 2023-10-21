@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 const Logo = () => {
   return (
     <div className={cx("box-logo")}>
-      <Link to="/">
+      <Link className={cx("box-logo-a")} to="/">
         <img
           src="https://entrada.webtravel.vn/image/logo-entrada.png"
           alt="entrada"

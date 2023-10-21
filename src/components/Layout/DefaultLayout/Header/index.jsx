@@ -1,50 +1,27 @@
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUser,
-  faCartShopping,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
+
 import Logo from "./components/Logo/Logo";
 import Menu from "./components/Menu/Menu";
+import Cta from "./components/Cta/Cta";
 
 const cx = classNames.bind(styles);
 function Header() {
   return (
     <>
       <nav className={cx("box-navbar")}>
-        <header className={cx("wrapper")}>
-          <div className={cx("inner")}>
-            {/* Logo */}
-            <Logo className={cx("menu")} />
-            {/* Menu   */}
-
-            <div className={cx("wrap-menu")}>
-              <Menu className={cx("menu")} />
-
-              {/* Components */}
-              <div className={cx("box-cta")}>
-                <Link className={cx("cta")} to="/user">
-                  <FontAwesomeIcon style={{ color: "#fff" }} icon={faUser} />
-                </Link>
-                <Link className={cx("cta")} to="/shopping">
-                  <FontAwesomeIcon
-                    style={{ color: "#fff" }}
-                    icon={faCartShopping}
-                  />
-                </Link>
-                <Link to="/search" className={cx("cta")}>
-                  <FontAwesomeIcon
-                    style={{ color: "#fff" }}
-                    icon={faMagnifyingGlass}
-                  />
-                </Link>
-              </div>
-            </div>
+        {/* Wrap Navbar */}
+        <div className={cx("wrapper")}>
+          {/* - Logo */}
+          <Logo className={cx("box-logo")} />
+          {/* - Wrap Menu*/}
+          <div className={cx("box-menu")}>
+            {/* Menu */}
+            <Menu className={cx("wrap-menu")} />
+            {/* CTA */}
+            <Cta className={cx("box-cta")} />
           </div>
-        </header>
+        </div>
       </nav>
     </>
   );

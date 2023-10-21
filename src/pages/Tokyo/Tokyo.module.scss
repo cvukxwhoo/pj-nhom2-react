@@ -1,0 +1,79 @@
+.container {
+  margin: 0 98.5px;
+  padding: 0 20px;
+}
+
+// --------------- //
+// Title Header
+.title-header {
+  padding: 30px 0 20px;
+}
+
+.title-header h2 {
+  white-space: normal;
+  overflow-wrap: break-word;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+// --------------- //
+//  Cards Item
+.cards-item {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 41px;
+  margin-top: 40px;
+  flex: 1 1 0%;
+}
+
+.card {
+  position: relative;
+  top: 0;
+  transition-property: top;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+  border-radius: 15px;
+  box-shadow: 0 0 transparent;
+}
+
+.card {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+}
+
+.detail-card {
+  padding: 4px;
+}
+
+.detail-card h2 {
+  padding: 0;
+  height: 48px;
+  margin-bottom: 4px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.detail-card .price {
+  margin-bottom: 2px;
+}
+
+.detail-card .price span {
+  color: #006c00 !important;
+  font-weight: 600 !important;
+}
+
+.place-and-time {
+  justify-content: flex-start;
+  display: flex;
+  margin-bottom: 4px;
+  color: #333 !important;
+}

@@ -1,24 +1,24 @@
 import Home from "../pages/Home";
 import Destination from "../pages/Destination";
 import Listing from "../pages/Listing";
-import Activities from "../pages/Activities";
+import Tokyo from "../pages/Tokyo/Tokyo";
 import Shop from "../pages/Shop";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import User from "../pages/User";
-import Shopping from "../pages/Shopping";
+import Osaka from "../pages/Osaka/Osaka";
 import Search from "../pages/Search";
 
 const publicRoutes = [
   { path: "/", component: Home },
   { path: "/destination", component: Destination },
   { path: "/listings", component: Listing },
-  { path: "/activities", component: Activities },
+  { path: "/tokyo", component: Tokyo },
   { path: "/shop", component: Shop },
   { path: "/blog", component: Blog },
   { path: "/contact", component: Contact },
   { path: "/user", component: User },
-  { path: "/shopping", component: Shopping },
+  { path: "/osaka", component: Osaka },
   { path: "/search", component: Search },
 ];
 const privateRoutes = [];
