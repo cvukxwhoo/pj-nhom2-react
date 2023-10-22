@@ -2,14 +2,15 @@ import "react-slideshow-image/dist/styles.css";
 import classNames from "classnames/bind";
 import styles from "./MichelinStar.module.scss";
 import SlideShow from "../../components/SlideShow/SlideShow";
-import { Divider } from "antd";
+import DatePickerValue from "../../components/DatePickerValue/DatePickerValue";
+import PhoneNumber from "../../components/PhoneNumber/PhoneNumber";
 
 const cx = classNames.bind(styles);
 
 const MichelinStar = () => {
   return (
     <div className={cx("container")}>
-      <h1>title</h1>
+      <h1 style={{ margin: "0 20px" }}>title</h1>
       <div className={cx("content-wrapper")}>
         {/* Image */}
         <div className={cx("image-main")}>
@@ -31,28 +32,34 @@ const MichelinStar = () => {
             {/* Highlight */}
             <div className={cx("highlight")}>
               <h2>Highlight</h2>
-              <p className={cx("break-word")}>
+              <div className={cx("break-word")}>
                 <ul>
                   <li>
                     English-speaking chef: enjoy an explanation of your meal in
-                    English!{" "}
+                    English!
                   </li>
                   <li>
                     Enjoy a variety of sushi made with different types of
-                    seafood{" "}
+                    seafood
                   </li>
                   <li>
                     Taste a fine selection of exquisite sushi carefully prepared
                     by one of Japan&apos; very best sushi masters, Takashi Ono{" "}
                   </li>
                 </ul>
-              </p>
+              </div>
             </div>
-            <Divider style={{ color: "#000" }} />
+            <hr
+              style={{
+                margin: "20px 0",
+                border: "none",
+                borderBottom: "3px solid #000",
+              }}
+            />
             {/* Important Info */}
             <div className={cx("important-info")}>
               <h2>Important Information</h2>
-              <p className={cx("break-word")}>
+              <div className={cx("break-word")}>
                 <ul>
                   <li>
                     This reservation is not guaranteed to be confirmed and is on
@@ -84,7 +91,45 @@ const MichelinStar = () => {
                     please inform us of all allergies at the time of booking
                   </li>
                 </ul>
-              </p>
+              </div>
+            </div>
+          </div>
+          <div className={cx("content-right")}>
+            <div className={cx("wrap-right")}>
+              <div className={cx("select-option", "mb-3")}>Selected Option</div>
+              <h2 className={cx("title", "mb-3")}>
+                <div>18-Piece Sushi + 4 Kinds of Sashimi Dinner Course</div>
+              </h2>
+              <div className={cx("total-price")}>
+                <label htmlFor="">Total</label>
+                <div className={cx("price")}>
+                  <span>46,200 JPY</span>
+                </div>
+              </div>
+              <hr
+                style={{
+                  margin: "20px 0",
+                  border: "none",
+                  borderBottom: "3px solid #000",
+                }}
+              />
+              <div className={cx("select-date")}>
+                <div className={cx("date")}>
+                  Check availability and select date
+                </div>
+                <DatePickerValue />
+              </div>
+
+              {/* phone numvber */}
+              <div className={cx("fill-ur-num")}>
+                <div className={cx("phone")}>
+                  Your phone number or email we'll contact for you later
+                </div>
+              </div>
+              <PhoneNumber />
+              {/* Done */}
+
+              <button className={cx("btn-submit")}>Proceed to checkout</button>
             </div>
           </div>
         </div>

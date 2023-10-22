@@ -9,7 +9,7 @@ const cx = classNames.bind(styles);
 function Header() {
   return (
     <>
-      <nav className={cx("box-navbar")}>
+      <nav className={cx("box-navbar", "scroll-menu")}>
         {/* Wrap Navbar */}
         <div className={cx("wrapper")}>
           {/* - Logo */}

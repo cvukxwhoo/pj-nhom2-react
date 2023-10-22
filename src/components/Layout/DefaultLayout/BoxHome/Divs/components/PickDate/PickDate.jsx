@@ -13,7 +13,7 @@ const PickDate = () => (
   <Space direction="vertical">
     <DatePicker
       className={cx("date-picker")}
-      size="large"
+      size="medium"
       disabledTime={TimeClock}
       onChange={onChange}
     />

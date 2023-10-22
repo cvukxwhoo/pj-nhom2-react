@@ -34,8 +34,9 @@
 
 .dropdown {
   position: absolute;
-  top: 90%;
-  left: 0;
+  top: 70px;
+  left: 0 !important;
+  width: 150px;
   padding: 20px 0px;
   background-color: #252525;
   visibility: hidden;
