@@ -19,11 +19,18 @@
 // --------------- //
 //  Cards Item
 .cards-item {
+  width: 100%;
+  flex: 1;
+  padding: 30px;
+}
+
+.cards {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 41px;
+  gap: 48px;
+  row-gap: 24px;
+  row-gap: 60px;
   margin-top: 40px;
-  flex: 1 1 0%;
 }
 
 .card {
@@ -34,6 +41,12 @@
   transition-timing-function: linear;
   border-radius: 15px;
   box-shadow: 0 0 transparent;
+  width: 25%;
+}
+
+.card:hover {
+  top: -10px;
+  box-shadow: 0 10px 14px rgba(149, 157, 165, 0.2);
 }
 
 .card {
