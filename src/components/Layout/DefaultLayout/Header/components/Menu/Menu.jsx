@@ -19,7 +19,9 @@ const Menu = () => {
           <ul className={cx("dropdown")}>
             <div className={cx("dropdown-left")}>
               <li className={cx("hover")}>
-                <Link className={cx("place")}>Tokyo</Link>
+                <Link to="/tokyo" className={cx("place")}>
+                  Tokyo
+                </Link>
               </li>
               <li className={cx("hover")}>
                 <Link className={cx("place")}>Kyoto</Link>
