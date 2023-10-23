@@ -4,13 +4,16 @@ import styles from "./MichelinStar.module.scss";
 import SlideShow from "../../components/SlideShow/SlideShow";
 import DatePickerValue from "../../components/DatePickerValue/DatePickerValue";
 import PhoneNumber from "../../components/PhoneNumber/PhoneNumber";
+import highlight from "./highlight.json";
+import important from "./important.json";
+import description from "./description.json";
 
 const cx = classNames.bind(styles);
 
 const MichelinStar = () => {
   return (
     <div className={cx("container")}>
-      <h1 style={{ margin: "0 20px" }}>title</h1>
+      <h1>Reservation for Sukiyabashi Jiro Roppongi 2 Michelin Star Tokyo</h1>
       <div className={cx("content-wrapper")}>
         {/* Image */}
         <div className={cx("image-main")}>
@@ -34,18 +37,9 @@ const MichelinStar = () => {
               <h2>Highlight</h2>
               <div className={cx("break-word")}>
                 <ul>
-                  <li>
-                    English-speaking chef: enjoy an explanation of your meal in
-                    English!
-                  </li>
-                  <li>
-                    Enjoy a variety of sushi made with different types of
-                    seafood
-                  </li>
-                  <li>
-                    Taste a fine selection of exquisite sushi carefully prepared
-                    by one of Japan&apos; very best sushi masters, Takashi Ono{" "}
-                  </li>
+                  {highlight.map((Highlight, index) => {
+                    return <li key={index}>{Highlight.content}</li>;
+                  })}
                 </ul>
               </div>
             </div>
@@ -61,39 +55,45 @@ const MichelinStar = () => {
               <h2>Important Information</h2>
               <div className={cx("break-word")}>
                 <ul>
-                  <li>
-                    This reservation is not guaranteed to be confirmed and is on
-                    a request basis
-                  </li>
-                  <li>
-                    Customers must be at the restaurant at least 5 minutes
-                    before the reserved time; in case of late arrival,
-                    reservations may be canceled without refund
-                  </li>
-                  <li>Additional food and drinks are not included</li>
-                  <li>Dress code is smart casual</li>
-                  <li>
-                    Wearing fragrances is strictly not permitted as it
-                    interferes with the appreciation of the meal
-                  </li>
-                  <li>
-                    Please be aware that Jiro Roppongi has just 8 seats, and
-                    availability may change without notice (calendar is not
-                    updated in real time)
-                  </li>
-                  <li>
-                    There are no seats for small children, so please let us know
-                    the ages of all children when you book
-                  </li>
-                  <li>
-                    Note that Jiro serves a set course and raw fish cannot be
-                    omitted; dietary preferences may not be accommodated, but
-                    please inform us of all allergies at the time of booking
-                  </li>
+                  {important.map((Important, index) => {
+                    return <li key={index}>{Important.content}</li>;
+                  })}
                 </ul>
               </div>
             </div>
+            {/* divider */}
+            <hr
+              style={{
+                margin: "20px 0",
+                border: "none",
+                borderBottom: "3px solid #000",
+              }}
+            />
+
+            {/* Description */}
+            <div className={cx("description")}>
+              <h2>Description</h2>
+              <p className={cx("break-word")}>
+                If you&apos;re visiting Tokyo and hoping to try sushi by the Ono
+                family, we can help you secure a seat at its 2 Michelin star
+                Jiro Roppongi branch! Run by Jiro Ono&apos;s son Takashi, here,
+                you can savor sushi made with the same passion, traditions, and
+                methods of Jiro Ono.
+              </p>
+
+              <p className={cx("break-word")}>
+                With our Jiro reservations, you can choose from two lunch
+                courses and two dinner courses:
+                <ul style={{ margin: " 20px 0" }}>
+                  {description.map((Descrip, index) => {
+                    return <li key={index}>{Descrip.content}</li>;
+                  })}
+                </ul>
+              </p>
+            </div>
           </div>
+
+          {/* ------- Content Right ---------- */}
           <div className={cx("content-right")}>
             <div className={cx("wrap-right")}>
               <div className={cx("select-option", "mb-3")}>Selected Option</div>
@@ -103,7 +103,7 @@ const MichelinStar = () => {
               <div className={cx("total-price")}>
                 <label htmlFor="">Total</label>
                 <div className={cx("price")}>
-                  <span>46,200 JPY</span>
+                  <span>29,040 JPY</span>
                 </div>
               </div>
               <hr
@@ -120,16 +120,18 @@ const MichelinStar = () => {
                 <DatePickerValue />
               </div>
 
-              {/* phone numvber */}
+              {/* phone number */}
               <div className={cx("fill-ur-num")}>
                 <div className={cx("phone")}>
-                  Your phone number or email we'll contact for you later
+                  Your phone number or email we will contact for you later
                 </div>
               </div>
               <PhoneNumber />
               {/* Done */}
 
-              <button className={cx("btn-submit")}>Proceed to checkout</button>
+              <button className={cx("btn-submit")}>
+                Book with your option
+              </button>
             </div>
           </div>
         </div>

@@ -2,7 +2,13 @@
   padding: 30px 0px;
   max-width: 1450px;
   margin: 70px auto;
-  height: 2500px;
+}
+
+.container > h1 {
+  margin: 50px 20px 40px;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 40px;
 }
 
 .content-wrapper {
@@ -32,6 +38,10 @@
   margin-bottom: 1.25rem;
 }
 
+.highlight {
+  margin-top: 40px;
+}
+
 h2 {
   white-space: normal;
   overflow-wrap: break-word;
@@ -43,7 +53,7 @@ h2 {
 
 .break-word {
   overflow-wrap: break-word;
-  margin-top: 1.25rem;
+  margin: 30px 0;
   color: #000;
   font-size: 2rem;
 }
@@ -70,6 +80,8 @@ h2 {
   z-index: 10;
   border-radius: 15px;
   padding: 20px;
+  position: sticky;
+  top: 100px;
 }
 
 .mb-3 {
