@@ -1,16 +1,48 @@
+import { useState } from "react";
 import "react-slideshow-image/dist/styles.css";
 import classNames from "classnames/bind";
 import styles from "./MichelinStar.module.scss";
-import SlideShow from "../../components/SlideShow/SlideShow";
-import DatePickerValue from "../../components/DatePickerValue/DatePickerValue";
-import PhoneNumber from "../../components/PhoneNumber/PhoneNumber";
+import SlideShow from "./SlideShow/SlideShow";
 import highlight from "./highlight.json";
 import important from "./important.json";
 import description from "./description.json";
+////// DatePicker /////
+import dayjs from "dayjs";
+import customParseFormat from "dayjs/plugin/customParseFormat";
+import { DatePicker, Space } from "antd";
+
+///// PhoneNumber ////
+import { UserOutlined } from "@ant-design/icons";
+import { Input } from "antd";
 
 const cx = classNames.bind(styles);
 
 const MichelinStar = () => {
+  // GetItem //
+  const savedInputValue = localStorage.getItem("savedInputValue");
+  const savedDateValue = localStorage.getItem("savedDateValue");
+
+  // useState value phone and date
+  const [inputValue, setInputValue] = useState("");
+  const [dateValue, setDateValue] = useState("");
+
+  /////////// INPUT String ///////
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  /////////// DatePicker ////////////////
+  dayjs.extend(customParseFormat);
+  const dateFormatList = ["DD-MM-YYYY"];
+
+  // Local Storage setItem //
+  const handleSubmit = () => {
+    alert("Success! Wait us contact against to you");
+    localStorage.setItem("savedInputValue", inputValue);
+    localStorage.setItem("savedDateValue", dateValue);
+  };
+
   return (
     <div className={cx("container")}>
       <h1>Reservation for Sukiyabashi Jiro Roppongi 2 Michelin Star Tokyo</h1>
@@ -81,7 +113,7 @@ const MichelinStar = () => {
                 methods of Jiro Ono.
               </p>
 
-              <p className={cx("break-word")}>
+              <div className={cx("break-word")}>
                 With our Jiro reservations, you can choose from two lunch
                 courses and two dinner courses:
                 <ul style={{ margin: " 20px 0" }}>
@@ -89,7 +121,7 @@ const MichelinStar = () => {
                     return <li key={index}>{Descrip.content}</li>;
                   })}
                 </ul>
-              </p>
+              </div>
             </div>
           </div>
 
@@ -117,7 +149,14 @@ const MichelinStar = () => {
                 <div className={cx("date")}>
                   Check availability and select date
                 </div>
-                <DatePickerValue />
+                <Space direction="vertical" size={12}>
+                  <DatePicker
+                    defaultValue={dayjs("17/10/2023", dateFormatList[0])}
+                    format={dateFormatList}
+                    selected={dateValue}
+                    onChange={(date) => setDateValue(date)}
+                  />
+                </Space>
               </div>
 
               {/* phone number */}
@@ -126,10 +165,16 @@ const MichelinStar = () => {
                   Your phone number or email we will contact for you later
                 </div>
               </div>
-              <PhoneNumber />
+              <Input
+                size="large"
+                placeholder="Your Phone or Email"
+                prefix={<UserOutlined />}
+                value={inputValue}
+                onChange={handleInputChange}
+              />
               {/* Done */}
 
-              <button className={cx("btn-submit")}>
+              <button onClick={handleSubmit} className={cx("btn-submit")}>
                 Book with your option
               </button>
             </div>
