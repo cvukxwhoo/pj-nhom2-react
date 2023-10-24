@@ -6,12 +6,12 @@ import styles from "./SlideShow.module.scss";
 const cx = classNames.bind(styles);
 const SlideShow = () => {
   const images = [
-    "https://prod-rte-static.rakutentravelxchange.com/369b4660-387d-424c-a57d-3b42bda71037.jpg?height=1000&format=webp",
-    "https://prod-rte-static.rakutentravelxchange.com/cb9543fa-6cf1-4867-aac6-ef552799fd6d.jpg?height=1000&format=webp",
-    "https://prod-rte-static.rakutentravelxchange.com/5c82a43f-9997-477e-b232-b609f0163aba.jpg?height=1000&format=webp",
-    "https://prod-rte-static.rakutentravelxchange.com/af4d1949-2cf1-44f0-9c3e-ff0a1a8916a6.jpg?height=1000&format=webp",
-    "https://prod-rte-static.rakutentravelxchange.com/4ed13263-ce27-427f-8d7a-84f37b7bd630.jpg?width=1440",
-    "https://prod-rte-static.rakutentravelxchange.com/2ceb151f-7b00-458e-9441-470b7c11e393.jpg?width=1440",
+    "https://d2izacsg13mtms.cloudfront.net/RQEFCS/images/26bce27b883e74aedb0b67eda67da732cbf05992b8a0d48a526cc4fb823a18be.jpg",
+    "https://d2izacsg13mtms.cloudfront.net/RQEFCS/images/d621c3b86f41e6624c2821b94c7da8016620367503d741fa800b815c851a07a0.jpg",
+    "https://d2izacsg13mtms.cloudfront.net/RQEFCS/images/41fca5afc5338e0489f53344b9487a247f612e1f14ca64c930c2e1d64e148f2a.jpg",
+    "https://d2izacsg13mtms.cloudfront.net/RQEFCS/images/284498e20832ca598b45f5c01a2b31211cc8f55e7bb930042d2979c7cd287159.jpg",
+    "https://d2izacsg13mtms.cloudfront.net/RQEFCS/images/03b974c79650451cdc19529cd1cd9ae85da859638fab5f3ea4ac3113c14a60a9.jpg",
+    "https://d2izacsg13mtms.cloudfront.net/RQEFCS/images/1cdc04263368004fee3e3935dc779a9f3256d7601740e0d35086f372061e0812.jpg",
   ];
 
   return (

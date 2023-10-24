@@ -17,7 +17,7 @@ import { Input } from "antd";
 
 const cx = classNames.bind(styles);
 
-const MichelinStar = () => {
+const GardenMuseum = () => {
   // GetItem //
   const savedInputValue = localStorage.getItem("savedInputValue");
   const savedDateValue = localStorage.getItem("savedDateValue");
@@ -58,10 +58,13 @@ const MichelinStar = () => {
             <div className={cx("overview")}>
               <h2>Overview</h2>
               <p className={cx("break-word")}>
-                Prepared with exacting dedication, sushi at Sukiyabashi Jiro is
-                world-famous for its exceptional quality. Secure a Sukiyabashi
-                Jiro Roppongi reservation to taste some of Tokyo&apos;s finest
-                sushi at the restaurant&apos;s 2-Michelin-star Roppongi branch
+                Located on a 840-meter-high mountain, the garden recreates the
+                natural landscape dreamed up by Monet, Renoir, Paul Cezanne, and
+                Van Gogh. Beautiful works by Impressionist painters are
+                surrounded by blooming flowers. The colors of the paintings,
+                which seem to sing of nature, are strangely soothing to our
+                hearts. Please spend a relaxing and comfortable time in this
+                garden close to the sky.
               </p>
             </div>
             {/* Highlight */}
@@ -106,16 +109,18 @@ const MichelinStar = () => {
             <div className={cx("description")}>
               <h2>Description</h2>
               <p className={cx("break-word")}>
-                If you&apos;re visiting Tokyo and hoping to try sushi by the Ono
-                family, we can help you secure a seat at its 2 Michelin star
-                Jiro Roppongi branch! Run by Jiro Ono&apos;s son Takashi, here,
-                you can savor sushi made with the same passion, traditions, and
-                methods of Jiro Ono.
+                "Garden Museum Hiei," a place to overlook Lake Biwa and Kyoto.
+                Located on top of a mountain at an altitude of 840 meters, this
+                garden reproduces the natural landscape that Monet, Renoir,
+                Cézanne, and Van Gogh dreamed of. There are beautiful works of
+                Impressionist painters surrounded by blooming flowers. The
+                colors, drawn as if singing nature, mysteriously soothe our
+                hearts. Spend a relaxing and comfortable time in this garden
+                close to the sky.
               </p>
 
               <div className={cx("break-word")}>
-                With our Jiro reservations, you can choose from two lunch
-                courses and two dinner courses:
+                Business Hours
                 <ul style={{ margin: " 20px 0" }}>
                   {description.map((Descrip, index) => {
                     return <li key={index}>{Descrip.content}</li>;
@@ -135,7 +140,7 @@ const MichelinStar = () => {
               <div className={cx("total-price")}>
                 <label htmlFor="">Total</label>
                 <div className={cx("price")}>
-                  <span>29,040 JPY</span>
+                  <span>1,100 JPY</span>
                 </div>
               </div>
               <hr
@@ -185,4 +190,4 @@ const MichelinStar = () => {
   );
 };
 
-export default MichelinStar;
+export default GardenMuseum;
