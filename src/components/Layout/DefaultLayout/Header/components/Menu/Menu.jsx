@@ -24,13 +24,19 @@ const Menu = () => {
                 </Link>
               </li>
               <li className={cx("hover")}>
-                <Link className={cx("place")}>Kyoto</Link>
+                <Link to="/kyoto" className={cx("place")}>
+                  Kyoto
+                </Link>
               </li>
               <li className={cx("hover")}>
-                <Link className={cx("place")}>Osaka</Link>
+                <Link to="/osaka" className={cx("place")}>
+                  Osaka
+                </Link>
               </li>
               <li className={cx("hover")}>
-                <Link className={cx("place")}>Kobe</Link>
+                <Link to="/kobe" className={cx("place")}>
+                  Kobe
+                </Link>
               </li>
             </div>
           </ul>

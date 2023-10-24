@@ -7,7 +7,7 @@ import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import User from "../pages/User";
 import Osaka from "../pages/Osaka/Osaka";
-import Search from "../pages/Search";
+import Kyoto from "../pages/Kyoto/Kyoto";
 // Tokyo
 import MichelinStar from "../pages/Tokyo/pages/MichelinStar/MichelinStar";
 import StreetKarting from "../pages/Tokyo/pages/StreetKarting/StreetKarting";
@@ -20,13 +20,13 @@ const publicRoutes = [
   { path: "/", component: Home },
   { path: "/destination", component: Destination },
   { path: "/listings", component: Listing },
-  { path: "/tokyo", component: Tokyo },
   { path: "/shop", component: Shop },
   { path: "/blog", component: Blog },
   { path: "/contact", component: Contact },
   { path: "/user", component: User },
   { path: "/osaka", component: Osaka },
-  { path: "/search", component: Search },
+  // Tokyo
+  { path: "/tokyo", component: Tokyo },
   // inside Tokyo Page
   { path: "/tokyo/michelinstar", component: MichelinStar },
   { path: "/tokyo/streetkarting", component: StreetKarting },
@@ -34,6 +34,9 @@ const publicRoutes = [
   { path: "/tokyo/sunshineaquarium", component: SunshineAquarium },
   { path: "/tokyo/tokyoskytree", component: TokyoSkytree },
   { path: "/tokyo/samurairestaurant", component: SamuraiRestaurant },
+  // Kyoto
+  { path: "/kyoto", component: Kyoto },
+  // inside Kyoto Page
 ];
 const privateRoutes = [];
 export { publicRoutes, privateRoutes };
