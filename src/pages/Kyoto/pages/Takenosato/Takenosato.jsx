@@ -17,7 +17,7 @@ import { Input } from "antd";
 
 const cx = classNames.bind(styles);
 
-const GardenMuseum = () => {
+const Takenosato = () => {
   // GetItem //
   const savedInputValue = localStorage.getItem("savedInputValue");
   const savedDateValue = localStorage.getItem("savedDateValue");
@@ -45,7 +45,7 @@ const GardenMuseum = () => {
 
   return (
     <div className={cx("container")}>
-      <h1>Garden Museum Hiei Admission Ticket</h1>
+      <h1>Kyoto Takenosato Onsen Manyo-no-Yu E-Tickets</h1>
       <div className={cx("content-wrapper")}>
         {/* Image */}
         <div className={cx("image-main")}>
@@ -58,13 +58,11 @@ const GardenMuseum = () => {
             <div className={cx("overview")}>
               <h2>Overview</h2>
               <p className={cx("break-word")}>
-                Located on a 840-meter-high mountain, the garden recreates the
-                natural landscape dreamed up by Monet, Renoir, Paul Cezanne, and
-                Van Gogh. Beautiful works by Impressionist painters are
-                surrounded by blooming flowers. The colors of the paintings,
-                which seem to sing of nature, are strangely soothing to our
-                hearts. Please spend a relaxing and comfortable time in this
-                garden close to the sky.
+                Kyoto Takenosato Onsen Manyo-no-Yu in the Rakusai area of Kyoto,
+                near Arashiyama and Sagano, has hot springs, a stone sauna, a
+                restaurant, a relaxing room and a manga corner. Open 24 hours,
+                it also has a free shuttle bus service from JR Katsuragawa
+                Station and Hankyu Rakusai-guchi Station.
               </p>
             </div>
             {/* Highlight */}
@@ -109,18 +107,19 @@ const GardenMuseum = () => {
             <div className={cx("description")}>
               <h2>Description</h2>
               <p className={cx("break-word")}>
-                "Garden Museum Hiei," a place to overlook Lake Biwa and Kyoto.
-                Located on top of a mountain at an altitude of 840 meters, this
-                garden reproduces the natural landscape that Monet, Renoir,
-                Cézanne, and Van Gogh dreamed of. There are beautiful works of
-                Impressionist painters surrounded by blooming flowers. The
-                colors, drawn as if singing nature, mysteriously soothe our
-                hearts. Spend a relaxing and comfortable time in this garden
-                close to the sky.
+                Kyoto Manyo no Yu is located in the Rakusai area of Kyoto, close
+                to Arashiyama and Sagano. It is conveniently accessible from
+                Kyoto Station, with a free shuttle bus running from Katsuragawa
+                Station, and is open 24 hours daily. In addition to hot springs
+                and hotel rooms, facilities include a bedrock bath, restaurant,
+                relaxation room, and relaxation programs. The standard plan
+                includes rental towels, yukata, and amenity goods. In addition
+                to the hot spring baths, guests can enjoy a set ticket for the
+                bedrock baths and seasonal meals with Manyogozen.
               </p>
 
               <div className={cx("break-word")}>
-                Business Hours
+                From reservation to entry, it's a simple 3-step process
                 <ul style={{ margin: " 20px 0" }}>
                   {description.map((Descrip, index) => {
                     return <li key={index}>{Descrip.content}</li>;
@@ -135,12 +134,12 @@ const GardenMuseum = () => {
             <div className={cx("wrap-right")}>
               <div className={cx("select-option", "mb-3")}>Selected Option</div>
               <h2 className={cx("title", "mb-3")}>
-                <div>18-Piece Sushi + 4 Kinds of Sashimi Dinner Course</div>
+                <div></div>
               </h2>
               <div className={cx("total-price")}>
                 <label htmlFor="">Total</label>
                 <div className={cx("price")}>
-                  <span>1,100 JPY</span>
+                  <span>3,000 JPY</span>
                 </div>
               </div>
               <hr
@@ -190,4 +189,4 @@ const GardenMuseum = () => {
   );
 };
 
-export default GardenMuseum;
+export default Takenosato;

@@ -19,6 +19,11 @@ import SamuraiRestaurant from "../pages/Tokyo/pages/SamuraiRestaurant/SamuraiRes
 
 // Kyoto
 import GardenMuseum from "../pages/Kyoto/pages/GardenMuseum/GardenMuseum";
+import Odawara from "../pages/Kyoto/pages/Odawara/Odawara";
+import Yokohama from "../pages/Kyoto/pages/Yokohama/Yokohama";
+import KyotoTower from "../pages/Kyoto/pages/KyotoTower/KyotoTower";
+import Takenosato from "../pages/Kyoto/pages/Takenosato/Takenosato";
+import HonkeTankuma from "../pages/Kyoto/pages/HonkeTankuma/HonkeTankuma";
 
 const publicRoutes = [
   { path: "/", component: Home },
@@ -41,6 +46,12 @@ const publicRoutes = [
   // Kyoto
   { path: "/kyoto", component: Kyoto },
   { path: "/kyoto/gardenmuseum", component: GardenMuseum },
+  { path: "/kyoto/odawara", component: Odawara },
+  { path: "/kyoto/yokohama", component: Yokohama },
+  { path: "/kyoto/kyototower", component: KyotoTower },
+  { path: "/kyoto/takenosato", component: Takenosato },
+  { path: "/kyoto/honketakuma", component: HonkeTankuma },
+
   // inside Kyoto Page
 ];
 const privateRoutes = [];

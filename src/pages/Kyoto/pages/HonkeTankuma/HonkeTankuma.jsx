@@ -17,7 +17,7 @@ import { Input } from "antd";
 
 const cx = classNames.bind(styles);
 
-const GardenMuseum = () => {
+const HonkeTankuma = () => {
   // GetItem //
   const savedInputValue = localStorage.getItem("savedInputValue");
   const savedDateValue = localStorage.getItem("savedDateValue");
@@ -45,7 +45,7 @@ const GardenMuseum = () => {
 
   return (
     <div className={cx("container")}>
-      <h1>Garden Museum Hiei Admission Ticket</h1>
+      <h1>Honke Tankuma Honten — Michelin-Starred Halal Kyoto Kaiseki</h1>
       <div className={cx("content-wrapper")}>
         {/* Image */}
         <div className={cx("image-main")}>
@@ -58,13 +58,10 @@ const GardenMuseum = () => {
             <div className={cx("overview")}>
               <h2>Overview</h2>
               <p className={cx("break-word")}>
-                Located on a 840-meter-high mountain, the garden recreates the
-                natural landscape dreamed up by Monet, Renoir, Paul Cezanne, and
-                Van Gogh. Beautiful works by Impressionist painters are
-                surrounded by blooming flowers. The colors of the paintings,
-                which seem to sing of nature, are strangely soothing to our
-                hearts. Please spend a relaxing and comfortable time in this
-                garden close to the sky.
+                Get a reservation at Honke Tankuma Honten—one of the most
+                prestigious Muslim-friendly restaurants in Japan—with Rakuten
+                Travel Experiences. This exclusive booking promises an exquisite
+                Kyoto-style kaiseki course, or one of tender wagyu beef.
               </p>
             </div>
             {/* Highlight */}
@@ -109,18 +106,15 @@ const GardenMuseum = () => {
             <div className={cx("description")}>
               <h2>Description</h2>
               <p className={cx("break-word")}>
-                "Garden Museum Hiei," a place to overlook Lake Biwa and Kyoto.
-                Located on top of a mountain at an altitude of 840 meters, this
-                garden reproduces the natural landscape that Monet, Renoir,
-                Cézanne, and Van Gogh dreamed of. There are beautiful works of
-                Impressionist painters surrounded by blooming flowers. The
-                colors, drawn as if singing nature, mysteriously soothe our
-                hearts. Spend a relaxing and comfortable time in this garden
-                close to the sky.
+                Certified by the Kyoto Council for Sharia and Halal Affairs,
+                Honke Tankuma Honten is, without a doubt, the place to go for
+                anyone seeking halal-certified, traditional Japanese cuisine.
+                This Michelin-starred kaiseki restaurant is one of the
+                highest-rated Muslim-friendly restaurants in all of Japan.
               </p>
 
               <div className={cx("break-word")}>
-                Business Hours
+                Menu:
                 <ul style={{ margin: " 20px 0" }}>
                   {description.map((Descrip, index) => {
                     return <li key={index}>{Descrip.content}</li>;
@@ -135,12 +129,12 @@ const GardenMuseum = () => {
             <div className={cx("wrap-right")}>
               <div className={cx("select-option", "mb-3")}>Selected Option</div>
               <h2 className={cx("title", "mb-3")}>
-                <div>18-Piece Sushi + 4 Kinds of Sashimi Dinner Course</div>
+                <div></div>
               </h2>
               <div className={cx("total-price")}>
                 <label htmlFor="">Total</label>
                 <div className={cx("price")}>
-                  <span>1,100 JPY</span>
+                  <span>63,250 JPY</span>
                 </div>
               </div>
               <hr
@@ -190,4 +184,4 @@ const GardenMuseum = () => {
   );
 };
 
-export default GardenMuseum;
+export default HonkeTankuma;
