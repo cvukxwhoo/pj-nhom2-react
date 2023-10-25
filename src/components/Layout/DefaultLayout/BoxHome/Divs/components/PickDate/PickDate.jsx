@@ -10,7 +10,7 @@ const onChange = (date, dateString) => {
   console.log(date, dateString);
 };
 const PickDate = () => (
-  <Space direction="vertical">
+  <Space direction="vertical" size={16}>
     <DatePicker
       className={cx("date-picker")}
       size="medium"

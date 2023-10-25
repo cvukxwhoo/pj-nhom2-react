@@ -2,32 +2,28 @@ import classNames from "classnames/bind";
 import styles from "./SelectPlace.module.scss";
 
 const cx = classNames.bind(styles);
-const SelectPlace = () => {
+const SelectPlace = ({ handleSelectChange }) => {
   const options = [
     {
-      label: "All Destionation",
+      label: "Tokyo",
       value: 1,
     },
     {
-      label: "Tokyo",
+      label: "Osaka",
       value: 2,
     },
     {
-      label: "Osaka",
+      label: "Kyoto",
       value: 3,
     },
     {
-      label: "Kyoto",
-      value: 4,
-    },
-    {
       label: "Nagoya",
-      value: 5,
+      value: 4,
     },
   ];
 
   return (
-    <select className={cx("select")}>
+    <select onChange={handleSelectChange} className={cx("select")}>
       {options.map((option, index) => {
         return (
           <option className={cx("op")} key={index} value={option.value}>
