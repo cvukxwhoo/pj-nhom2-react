@@ -1,17 +1,17 @@
 import classNames from "classnames/bind";
-import styles from "./Osaka.module.scss";
+import styles from "./Okinawa.module.scss";
 import { Link } from "react-router-dom";
 import data from "./data.json";
 
 const cx = classNames.bind(styles);
 
-const Kyoto = () => {
+const Okinawa = () => {
   return (
     <div className={cx("container")}>
       {/* ------------------- */}
       {/* Title Header */}
       <div className={cx("title-header")}>
-        <h2>Recommend sightseeing and Travel experiences in Kyoto</h2>
+        <h2>Recommend sightseeing and Travel experiences in Okinawa</h2>
       </div>
       {/* ------------------- */}
       {/* Card Map */}
@@ -40,4 +40,4 @@ const Kyoto = () => {
   );
 };
 
-export default Kyoto;
+export default Okinawa;

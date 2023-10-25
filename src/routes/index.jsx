@@ -1,6 +1,5 @@
 import Home from "../pages/Home";
 import Destination from "../pages/Destination";
-import Listing from "../pages/Listing";
 import Tokyo from "../pages/Tokyo/Tokyo";
 import Shop from "../pages/Shop";
 import Blog from "../pages/Blog";
@@ -8,6 +7,7 @@ import Contact from "../pages/Contact";
 import User from "../pages/User";
 import Osaka from "../pages/Osaka/Osaka";
 import Kyoto from "../pages/Kyoto/Kyoto";
+import Okinawa from "../pages/Okinawa/Okinawa";
 
 // Tokyo
 import MichelinStar from "../pages/Tokyo/pages/MichelinStar/MichelinStar";
@@ -25,10 +25,20 @@ import KyotoTower from "../pages/Kyoto/pages/KyotoTower/KyotoTower";
 import Takenosato from "../pages/Kyoto/pages/Takenosato/Takenosato";
 import HonkeTankuma from "../pages/Kyoto/pages/HonkeTankuma/HonkeTankuma";
 
+// Osaka
+import OsakaCastle from "../pages/Osaka/pages/OsakaCastle/OsakaCastle";
+import Kansai from "../pages/Osaka/pages/Kansai/Kansai";
+import KansaiAirport from "../pages/Osaka/pages/KansaiAirport/KansaiAirport";
+import Umeda from "../pages/Osaka/pages/Umeda/Umeda";
+import Sakishima from "../pages/Osaka/pages/Sakishima/Sakishima";
+
+// Okinawa
+import BlueCave from "../pages/Okinawa/pages/BlueCave/BlueCave";
+
 const publicRoutes = [
   { path: "/", component: Home },
   { path: "/destination", component: Destination },
-  { path: "/listings", component: Listing },
+  { path: "/okinawa", component: Okinawa },
   { path: "/shop", component: Shop },
   { path: "/blog", component: Blog },
   { path: "/contact", component: Contact },
@@ -52,7 +62,33 @@ const publicRoutes = [
   { path: "/kyoto/takenosato", component: Takenosato },
   { path: "/kyoto/honketakuma", component: HonkeTankuma },
 
-  // inside Kyoto Page
+  // Osaka
+  {
+    path: "/osaka/osakacastle",
+    component: OsakaCastle,
+  },
+  {
+    path: "/osaka/kansai",
+    component: Kansai,
+  },
+  {
+    path: "/osaka/kansaiairport",
+    component: KansaiAirport,
+  },
+  {
+    path: "/osaka/umeda",
+    component: Umeda,
+  },
+  {
+    path: "/osaka/sakishima",
+    component: Sakishima,
+  },
+
+  // Onikawa
+  {
+    path: "/okinawa/bluecave",
+    component: BlueCave,
+  },
 ];
 const privateRoutes = [];
 export { publicRoutes, privateRoutes };

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "link": "/kyoto/gardenmuseum",
+    "img": "https://d2izacsg13mtms.cloudfront.net/RQEFCS/images/26bce27b883e74aedb0b67eda67da732cbf05992b8a0d48a526cc4fb823a18be.jpg",
+    "title": "Garden Museum Hiei Admission Ticket",
+    "price": "1,100 JPY",
+    "place": "Kyoto",
+    "time": "2 hours"
+  },
+  {
+    "id": "2",
+    "link": "/kyoto/odawara",
+    "img": "https://prod-rte-static.rakutentravelxchange.com/266fead9-0cda-4ea4-a6b3-1b413ae908c3.jpeg?width=400",
+    "title": "Odawara-Kyoto Bullet Train Shinkansen...",
+    "price": "13,310 JPY",
+    "place": "Kyoto",
+    "time": ""
+  },
+  {
+    "id": "3",
+    "link": "/kyoto/yokohama",
+    "img": "https://prod-rte-static.rakutentravelxchange.com/9b60ba00-d147-4327-8da9-d022e4170ea4.jpg?width=400",
+    "title": "Shin-Yokohama-Kyoto Bullet Train Shin...",
+    "price": "14,630 JPY",
+    "place": "Kyoto",
+    "time": "1 hours 55 mins"
+  },
+  {
+    "id": "4",
+    "link": "/kyoto/kyototower",
+    "img": "https://prod-rte-static.rakutentravelxchange.com/0a8dfb2d-e1b3-4d23-b6cb-998e57c2fc94?width=400",
+    "title": "Kyoto Tower Observation Deck Admissio...",
+    "price": "900 JPY",
+    "place": "Kyoto",
+    "time": ""
+  },
+  {
+    "id": "5",
+    "link": "/kyoto/takenosato",
+    "img": "https://d2izacsg13mtms.cloudfront.net/REBILE/images/556732dbbedf0851c1847eb33d9f5f872b5716ea24b37d9ca49f7c693861e2da.jpg",
+    "title": "Kyoto Takenosato Onsen Manyo-no-Yu E-...",
+    "price": "3,000 JPY",
+    "place": "Kyoto",
+    "time": ""
+  },
+  {
+    "id": "6",
+    "link": "/kyoto/honketakuma ",
+    "img": "https://prod-rte-static.rakutentravelxchange.com/f62efd5b-8dbf-4ee6-9aff-e056ab28fa90.jpg?width=400",
+    "title": "Honke Tankuma Honten — Michelin-Starr...",
+    "price": "31,625 JPY",
+    "place": "Kyoto",
+    "time": "2 hours"
+  }
+]

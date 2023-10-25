@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import styles from "./Osaka.module.scss";
+import styles from "./Kyoto.module.scss";
 import { Link } from "react-router-dom";
 import data from "./data.json";
 

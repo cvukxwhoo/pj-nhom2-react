@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "link": "/osaka/osakacastle",
+    "img": "https://prod-rte-static.rakutentravelxchange.com/e5efe3a1-6bcf-434e-a0ca-1e6aa08fc1b8.jpg?width=400",
+    "title": " Osaka Castle Tickets (Museum + Main T...",
+    "price": "600 JPY",
+    "place": "Osaka",
+    "time": ""
+  },
+  {
+    "id": "2",
+    "link": "/osaka/kansai",
+    "img": "https://prod-rte-static.rakutentravelxchange.com/cb246350-ad07-46d6-adad-3a9ce88e37bd.jpeg?width=400",
+    "title": "5-Day Kansai WIDE Area Pass E-Voucher...",
+    "price": "12,000 JPY",
+    "place": "Osaka",
+    "time": "5 days"
+  },
+  {
+    "id": "3",
+    "link": "/osaka/kansaiairport",
+    "img": "https://prod-rte-static.rakutentravelxchange.com/7693e326-9103-401f-826a-20a59bdb328c.jpeg?width=400",
+    "title": " Kansai Airport-Kyoto Haruka Limited E...",
+    "price": "2,200 JPY",
+    "place": "Osaka",
+    "time": "1 day"
+  },
+  {
+    "id": "4",
+    "link": "/osaka/umeda",
+    "img": "https://prod-rte-static.rakutentravelxchange.com/524bb338-f8e9-488b-92f1-57c472e4f66d.jpg?width=400",
+    "title": "Umeda Sky Building Floating Garden Ob...",
+    "price": "1,500 JPY",
+    "place": "Osaka",
+    "time": "1 day"
+  },
+  {
+    "id": "5",
+    "link": "/osaka/sakishima",
+    "img": "https://d2izacsg13mtms.cloudfront.net/RBG6I9/images/72af4f8086b63a53732961c9c81dac4ee0aba3989b582fa7ce16893928349d80.jpg",
+    "title": "Osaka Sakishima Observatory Advance T...",
+    "price": "700 JPY",
+    "place": "Osaka",
+    "time": ""
+  }
+]

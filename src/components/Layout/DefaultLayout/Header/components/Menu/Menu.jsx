@@ -34,8 +34,8 @@ const Menu = () => {
                 </Link>
               </li>
               <li className={cx("hover")}>
-                <Link to="/kobe" className={cx("place")}>
-                  Kobe
+                <Link to="/okinawa" className={cx("place")}>
+                  Onikawa
                 </Link>
               </li>
             </div>
