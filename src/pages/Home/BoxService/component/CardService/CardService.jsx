@@ -1,5 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./CardService.module.scss";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -19,7 +20,16 @@ const CardService = () => {
             Okinawa is an archipelago of Japan, located in the south of the
             country, consisting of more than 150 small and large islands.
           </p>
-          <button>Explore</button>
+
+          <button>
+            <Link
+              className={cx("route")}
+              style={{ textDecoration: "none" }}
+              to="/okinawa"
+            >
+              Explore
+            </Link>
+          </button>
         </div>
       </div>
 
@@ -34,7 +44,16 @@ const CardService = () => {
             historical sites such as Erinji Temple. and Kuonji temple, many
             wonderful hot springs, and some of Japan's best wineries.
           </p>
-          <button>Explore</button>
+
+          <button>
+            <Link
+              className={cx("route")}
+              style={{ textDecoration: "none" }}
+              to="/yamanashi"
+            >
+              Explore
+            </Link>
+          </button>
         </div>
         <div className={cx("img-service")}>
           <img

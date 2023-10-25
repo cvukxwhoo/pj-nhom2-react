@@ -19,20 +19,6 @@ const Cta = () => {
           icon={faUser}
         />
       </Link>
-      <Link className={cx("cta")} to="/shopping">
-        <FontAwesomeIcon
-          className={cx("icon")}
-          style={{ color: "#fff" }}
-          icon={faCartShopping}
-        />
-      </Link>
-      <Link to="/search" className={cx("cta")}>
-        <FontAwesomeIcon
-          className={cx("icon")}
-          style={{ color: "#fff" }}
-          icon={faMagnifyingGlass}
-        />
-      </Link>
     </div>
   );
 };

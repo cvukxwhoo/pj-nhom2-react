@@ -9,7 +9,7 @@ const Menu = () => {
       <ul className={cx("menu")}>
         {/* Home */}
         <li className={cx("drop-child")}>
-          <Link className={cx("nav-child")} to="/">
+          <Link to="/" className={cx("nav-child")}>
             Home
           </Link>
         </li>
@@ -40,6 +40,16 @@ const Menu = () => {
               </li>
             </div>
           </ul>
+        </li>
+        <li className={cx("drop-child")}>
+          <Link className={cx("nav-child")} to="/">
+            Blog
+          </Link>
+        </li>
+        <li className={cx("drop-child")}>
+          <Link className={cx("nav-child")} to="/">
+            Contact
+          </Link>
         </li>
       </ul>
     </div>
