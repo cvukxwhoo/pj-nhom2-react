@@ -1,13 +1,13 @@
 import Home from "../pages/Home";
-import Destination from "../pages/Destination";
 import Tokyo from "../pages/Tokyo/Tokyo";
-import Shop from "../pages/Shop";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import User from "../pages/User";
 import Osaka from "../pages/Osaka/Osaka";
 import Kyoto from "../pages/Kyoto/Kyoto";
 import Okinawa from "../pages/Okinawa/Okinawa";
+import Kanagawa from "../pages/Kanagawa/Kanagawa";
+import Yamanashi from "../pages/Yamanashi/Yamanashi";
 
 // Tokyo
 import MichelinStar from "../pages/Tokyo/pages/MichelinStar/MichelinStar";
@@ -37,11 +37,16 @@ import BlueCave from "../pages/Okinawa/pages/BlueCave/BlueCave";
 import Cave from "../pages/Okinawa/pages/Cave/Cave";
 import Yubu from "../pages/Okinawa/pages/Yubu/Yubu";
 
+// Kanagawa
+import Enoshima from "../pages/Kanagawa/pages/Enoshima/Enoshima";
+
+// Yamanashi
+import Discovery from "../pages/Yamanashi/pages/Discovery/Discovery";
+import FullDay from "../pages/Yamanashi/pages/FullDay/FullDay";
+
 const publicRoutes = [
   { path: "/", component: Home },
-  { path: "/destination", component: Destination },
   { path: "/okinawa", component: Okinawa },
-  { path: "/shop", component: Shop },
   { path: "/blog", component: Blog },
   { path: "/contact", component: Contact },
   { path: "/user", component: User },
@@ -98,6 +103,31 @@ const publicRoutes = [
   {
     path: "/okinawa/yubu",
     component: Yubu,
+  },
+
+  // Kanagawa
+  {
+    path: "/kanagawa",
+    component: Kanagawa,
+  },
+  {
+    path: "/kanagawa/enoshima",
+    component: Enoshima,
+  },
+
+  // mtFuji
+  {
+    path: "/yamanashi/discovery",
+    component: Discovery,
+  },
+  {
+    path: "/yamanashi/fullday",
+    component: FullDay,
+  },
+
+  {
+    path: "/yamanashi",
+    component: Yamanashi,
   },
 ];
 const privateRoutes = [];

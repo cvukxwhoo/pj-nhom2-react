@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "link": "/yamanashi/discovery",
+    "img": "https://prod-rte-static.rakutentravelxchange.com/20f86a2e-6ff7-4e67-8541-1fe8412eef0a.jpeg?width=400",
+    "title": "  Mt.Fuji Discovery: Scenic Bus Tour wi...",
+    "price": "16,000 JPY",
+    "place": "Yamanashi",
+    "time": "8 hours"
+  },
+  {
+    "id": "2",
+    "link": "/yamanashi/fullday",
+    "img": "https://prod-rte-static.rakutentravelxchange.com/499dc158-bdd8-40cb-bf76-027db62862d4.jpg?width=400",
+    "title": "Full Day Trip Mt.Fuji & Hakone Digest...",
+    "price": "125,000 JPY",
+    "place": "Yamanashi",
+    "time": "12 hours"
+  }
+]

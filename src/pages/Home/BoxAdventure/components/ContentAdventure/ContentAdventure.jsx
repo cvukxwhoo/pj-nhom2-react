@@ -3,6 +3,7 @@ import styles from "./ContentAdventure.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPersonWalking } from "@fortawesome/free-solid-svg-icons";
 import Data from "./Data";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -14,7 +15,7 @@ const ContentAdventure = () => {
       <div className={cx("photo-adventure")}>
         {Data.map((data, index) => {
           return (
-            <div className={cx("photo-card")} key={index}>
+            <Link to={data.path} className={cx("photo-card")} key={index}>
               <img src={data.src} alt="Tokyo" />
               <div className={cx("info-card")}>
                 <FontAwesomeIcon
@@ -23,7 +24,7 @@ const ContentAdventure = () => {
                 />
                 <p>{data.content}</p>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
