@@ -34,6 +34,8 @@ import Sakishima from "../pages/Osaka/pages/Sakishima/Sakishima";
 
 // Okinawa
 import BlueCave from "../pages/Okinawa/pages/BlueCave/BlueCave";
+import Cave from "../pages/Okinawa/pages/Cave/Cave";
+import Yubu from "../pages/Okinawa/pages/Yubu/Yubu";
 
 const publicRoutes = [
   { path: "/", component: Home },
@@ -88,6 +90,14 @@ const publicRoutes = [
   {
     path: "/okinawa/bluecave",
     component: BlueCave,
+  },
+  {
+    path: "/okinawa/cave",
+    component: Cave,
+  },
+  {
+    path: "/okinawa/yubu",
+    component: Yubu,
   },
 ];
 const privateRoutes = [];
