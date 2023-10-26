@@ -21,7 +21,7 @@ const SelectPlace = ({ handleSelectChange }) => {
       value: 4,
     },
     {
-      label: "Nagoya",
+      label: "Okinawa",
       value: 5,
     },
   ];
