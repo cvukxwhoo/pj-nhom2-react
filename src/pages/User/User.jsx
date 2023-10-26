@@ -1,7 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./User.module.scss";
 import { useState } from "react";
-import { Alert, Space } from "antd";
 
 const cx = classNames.bind(styles);
 const User = () => {
@@ -14,15 +13,14 @@ const User = () => {
   const [usernameLogin, setUsernameLogin] = useState("");
   const [passwordLogin, setPasswordLogin] = useState("");
 
-  const handleLogin = () => {
-    // Perform login logic here
-    // You can check the username and password against stored data or an API
-    <Space direction="vertical" style={{ width: "100%" }}>
-      <Alert message="Login Success" type="success" showIcon />
-    </Space>;
+  const handleLogin = (event) => {
     // Save user data to local storage
     localStorage.setItem("userLogin", usernameLogin);
     localStorage.setItem("pwdLogin", passwordLogin);
+    // Reset value
+    event.preventDefault();
+    setUsernameLogin("");
+    setPasswordLogin("");
     alert("Success");
   };
   ////////////////////////////////////
@@ -30,15 +28,15 @@ const User = () => {
   const [usernameRegister, setUsernameRegister] = useState("");
   const [passwordRegister, setPasswordRegister] = useState("");
 
-  const handleRegister = () => {
-    // Perform registration logic here
-    // You can save the username and password to a database or an API
-
+  const handleRegister = (event) => {
     // Save user data to local storage
     localStorage.setItem("userRegis", usernameRegister);
     localStorage.setItem("pwdRegis", passwordRegister);
+    // Reset value
+    event.preventDefault();
+    setUsernameRegister("");
+    setPasswordRegister("");
     alert("Success");
-    // Redirect to the home page or another route
   };
 
   return (

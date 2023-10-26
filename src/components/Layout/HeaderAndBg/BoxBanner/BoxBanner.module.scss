@@ -1,0 +1,40 @@
+.box-banner {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45vh;
+}
+
+.box-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-banner .filter-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.box-banner .wrap-title-banner {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-banner .wrap-title-banner h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57px;
+  margin: 0px 0px 15px;
+  text-align: left;
+}

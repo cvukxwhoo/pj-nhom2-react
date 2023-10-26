@@ -1,3 +1,4 @@
+import HeaderAndBg from "../components/Layout/HeaderAndBg";
 import Home from "../pages/Home";
 import Tokyo from "../pages/Tokyo/Tokyo";
 import Blog from "../pages/Blog";
@@ -46,88 +47,114 @@ import FullDay from "../pages/Yamanashi/pages/FullDay/FullDay";
 
 const publicRoutes = [
   { path: "/", component: Home },
-  { path: "/okinawa", component: Okinawa },
+
   { path: "/blog", component: Blog },
   { path: "/contact", component: Contact },
   { path: "/user", component: User },
-  { path: "/osaka", component: Osaka },
+
   // Tokyo
-  { path: "/tokyo", component: Tokyo },
+  { path: "/tokyo", component: Tokyo, layout: HeaderAndBg },
   // inside Tokyo Page
-  { path: "/tokyo/michelinstar", component: MichelinStar },
-  { path: "/tokyo/streetkarting", component: StreetKarting },
-  { path: "/tokyo/teamlab", component: Teamlab },
-  { path: "/tokyo/sunshineaquarium", component: SunshineAquarium },
-  { path: "/tokyo/tokyoskytree", component: TokyoSkytree },
-  { path: "/tokyo/samurairestaurant", component: SamuraiRestaurant },
+  { path: "/tokyo/michelinstar", component: MichelinStar, layout: HeaderAndBg },
+  {
+    path: "/tokyo/streetkarting",
+    component: StreetKarting,
+    layout: HeaderAndBg,
+  },
+  { path: "/tokyo/teamlab", component: Teamlab, layout: HeaderAndBg },
+  {
+    path: "/tokyo/sunshineaquarium",
+    component: SunshineAquarium,
+    layout: HeaderAndBg,
+  },
+  { path: "/tokyo/tokyoskytree", component: TokyoSkytree, layout: HeaderAndBg },
+  {
+    path: "/tokyo/samurairestaurant",
+    component: SamuraiRestaurant,
+    layout: HeaderAndBg,
+  },
   // Kyoto
-  { path: "/kyoto", component: Kyoto },
-  { path: "/kyoto/gardenmuseum", component: GardenMuseum },
-  { path: "/kyoto/odawara", component: Odawara },
-  { path: "/kyoto/yokohama", component: Yokohama },
-  { path: "/kyoto/kyototower", component: KyotoTower },
-  { path: "/kyoto/takenosato", component: Takenosato },
-  { path: "/kyoto/honketakuma", component: HonkeTankuma },
+  { path: "/kyoto", component: Kyoto, layout: HeaderAndBg },
+  { path: "/kyoto/gardenmuseum", component: GardenMuseum, layout: HeaderAndBg },
+  { path: "/kyoto/odawara", component: Odawara, layout: HeaderAndBg },
+  { path: "/kyoto/yokohama", component: Yokohama, layout: HeaderAndBg },
+  { path: "/kyoto/kyototower", component: KyotoTower, layout: HeaderAndBg },
+  { path: "/kyoto/takenosato", component: Takenosato, layout: HeaderAndBg },
+  { path: "/kyoto/honketakuma", component: HonkeTankuma, layout: HeaderAndBg },
 
   // Osaka
+  { path: "/osaka", component: Osaka, layout: HeaderAndBg },
   {
     path: "/osaka/osakacastle",
     component: OsakaCastle,
+    layout: HeaderAndBg,
   },
   {
     path: "/osaka/kansai",
     component: Kansai,
+    layout: HeaderAndBg,
   },
   {
     path: "/osaka/kansaiairport",
     component: KansaiAirport,
+    layout: HeaderAndBg,
   },
   {
     path: "/osaka/umeda",
     component: Umeda,
+    layout: HeaderAndBg,
   },
   {
     path: "/osaka/sakishima",
     component: Sakishima,
+    layout: HeaderAndBg,
   },
 
   // Onikawa
+  { path: "/okinawa", component: Okinawa, layout: HeaderAndBg },
   {
     path: "/okinawa/bluecave",
     component: BlueCave,
+    layout: HeaderAndBg,
   },
   {
     path: "/okinawa/cave",
     component: Cave,
+    layout: HeaderAndBg,
   },
   {
     path: "/okinawa/yubu",
     component: Yubu,
+    layout: HeaderAndBg,
   },
 
   // Kanagawa
   {
     path: "/kanagawa",
     component: Kanagawa,
+    layout: HeaderAndBg,
   },
   {
     path: "/kanagawa/enoshima",
     component: Enoshima,
+    layout: HeaderAndBg,
   },
 
-  // mtFuji
+  // Yamanashi, layout: HeaderAndBg
+  {
+    path: "/yamanashi",
+    component: Yamanashi,
+    layout: HeaderAndBg,
+  },
   {
     path: "/yamanashi/discovery",
     component: Discovery,
+    layout: HeaderAndBg,
   },
   {
     path: "/yamanashi/fullday",
     component: FullDay,
-  },
-
-  {
-    path: "/yamanashi",
-    component: Yamanashi,
+    layout: HeaderAndBg,
   },
 ];
 const privateRoutes = [];
