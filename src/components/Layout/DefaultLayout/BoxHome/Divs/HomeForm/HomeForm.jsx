@@ -17,13 +17,13 @@ const HomeForm = () => {
     event.preventDefault();
 
     // Change the route based on the selected value
-    if (selectedValue === "1") {
+    if (selectedValue === "2") {
       navigate("/tokyo");
-    } else if (selectedValue === "2") {
-      navigate("/osaka");
     } else if (selectedValue === "3") {
-      navigate("/kyoto");
+      navigate("/osaka");
     } else if (selectedValue === "4") {
+      navigate("/kyoto");
+    } else if (selectedValue === "5") {
       navigate("/okinawa");
     }
   };

@@ -5,20 +5,24 @@ const cx = classNames.bind(styles);
 const SelectPlace = ({ handleSelectChange }) => {
   const options = [
     {
-      label: "Tokyo",
+      label: "All Destination",
       value: 1,
     },
     {
-      label: "Osaka",
+      label: "Tokyo",
       value: 2,
     },
     {
-      label: "Kyoto",
+      label: "Osaka",
       value: 3,
     },
     {
-      label: "Nagoya",
+      label: "Kyoto",
       value: 4,
+    },
+    {
+      label: "Nagoya",
+      value: 5,
     },
   ];
 

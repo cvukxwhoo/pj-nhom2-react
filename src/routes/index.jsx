@@ -2,7 +2,7 @@ import Home from "../pages/Home";
 import Tokyo from "../pages/Tokyo/Tokyo";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
-import User from "../pages/User";
+import User from "../pages/User/User";
 import Osaka from "../pages/Osaka/Osaka";
 import Kyoto from "../pages/Kyoto/Kyoto";
 import Okinawa from "../pages/Okinawa/Okinawa";

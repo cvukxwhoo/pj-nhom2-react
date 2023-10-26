@@ -16,6 +16,8 @@ const PickDate = () => (
       size="medium"
       disabledTime={TimeClock}
       onChange={onChange}
+      suffixIcon
+      style={{ width: "433px", height: "45px" }}
     />
   </Space>
 );
